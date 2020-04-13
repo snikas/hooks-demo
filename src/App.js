@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
       setInitialCount(10);
       console.log('setting initial count....');
-  });
+  }, []);
 
   return (
     <div className="App">

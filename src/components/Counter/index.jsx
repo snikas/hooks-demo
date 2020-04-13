@@ -6,7 +6,7 @@ const Counter = ({ initialCount }) => {
 
     useEffect(() => {
         setCount(initialCount);
-    })
+    }, [initialCount])
 
     return (
         <>
