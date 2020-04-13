@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ButtonContainer } from './styles';
 
 const Counter = ({ initialCount }) => {
     const [count, setCount] = useState(initialCount);
+
+    useEffect(() => {
+        setCount(initialCount);
+    })
 
     return (
         <>
