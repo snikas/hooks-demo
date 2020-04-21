@@ -1,11 +1,5 @@
 This project demonstrates the following React hooks using a counter app.
-- useState
-- useEffect
-- useReducer
-- useContext
-- custom hooks
-
-Each tag corresponds to demonstrating a different hook/refactor
+git tags have been used to demonstrate refactor interations.
 
 - [useState hook](https://github.com/snikas/hooks-demo/compare/1...2)
 - [useEffect hook](https://github.com/snikas/hooks-demo/compare/2...3)
