@@ -1,13 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
-import Counter from './components/Counter';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Counter from "./components/Counter";
+import counterService from "./services/countService";
 
 function App() {
-  const [initialCount, setInitialCount ] = useState(0);
+  const [initialCount, setInitialCount] = useState(0);
 
   useEffect(() => {
-      setInitialCount(10);
-      console.log('setting initial count....');
+    const fetchData = async () => {
+      const data = await counterService();
+      setInitialCount(data);
+    };
+
+    fetchData();
   }, []);
 
   return (
