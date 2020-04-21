@@ -1,24 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import Counter from "./components/Counter";
-import counterService from "./services/countService";
+import useRequest from "./hooks/useRequest";
 
 function App() {
-  const [initialCount, setInitialCount] = useState(0);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await counterService();
-      setInitialCount(data);
-    };
-
-    fetchData();
-  }, []);
+  const { isLoading, initialCount } = useRequest();
 
   return (
     <div className="App">
       <header className="App-header">
-        <Counter initialCount={initialCount} />
+        {
+          isLoading ? <div class="loader" /> : <Counter initialCount={initialCount} />
+        }
       </header>
     </div>
   );
