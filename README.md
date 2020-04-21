@@ -7,13 +7,13 @@ This project demonstrates the following React hooks using a counter app.
 
 Each tag corresponds to demonstrating a different hook/refactor
 
-[useState hook](https://github.com/snikas/hooks-demo/compare/1...2)
-[useEffect hook](https://github.com/snikas/hooks-demo/compare/2...3)
-[useEffect hook part 2 (dependencies)](https://github.com/snikas/hooks-demo/compare/3...4)
-[useReducer hook](https://github.com/snikas/hooks-demo/compare/3...4)
-[useContext hook](https://github.com/snikas/hooks-demo/compare/4...5)
-[custom hook part 1 (before refactor)](https://github.com/snikas/hooks-demo/compare/4...5)
-[custom hook part 2 (after refactor)](https://github.com/snikas/hooks-demo/compare/5...6)
+- [useState hook](https://github.com/snikas/hooks-demo/compare/1...2)
+- [useEffect hook](https://github.com/snikas/hooks-demo/compare/2...3)
+- [useEffect hook part 2 (dependencies)](https://github.com/snikas/hooks-demo/compare/3...4)
+- [useReducer hook](https://github.com/snikas/hooks-demo/compare/3...4)
+- [useContext hook](https://github.com/snikas/hooks-demo/compare/4...5)
+- [custom hook part 1 (before refactor)](https://github.com/snikas/hooks-demo/compare/4...5)
+- [custom hook part 2 (after refactor)](https://github.com/snikas/hooks-demo/compare/5...6)
 
 In the project directory, you can run:
 
