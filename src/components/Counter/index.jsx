@@ -1,4 +1,6 @@
 import React, { useReducer, useEffect } from 'react';
+import CounterDisplay from '../CounterDisplay';
+import CounterContext from '../../context/counterContext';
 import { ButtonContainer } from './styles';
 
 function init(initialCount) {
@@ -26,8 +28,8 @@ const Counter = ({ initialCount }) => {
     }, [initialCount])
 
     return (
-        <>
-            Count: {count}
+        <CounterContext.Provider value={count}>
+            <CounterDisplay />
             <ButtonContainer>
                 <button
                 onClick={() => dispatch({ type: 'reset', payload: initialCount })}>
@@ -36,7 +38,7 @@ const Counter = ({ initialCount }) => {
                 <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
                 <button onClick={() => dispatch({ type: 'increment' })}>+</button>
             </ButtonContainer>
-        </>
+        </CounterContext.Provider>
         );
 };
 
